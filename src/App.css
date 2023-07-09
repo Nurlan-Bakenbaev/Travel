@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: "PT Sans", sans-serif;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.home,
+.services,
+.products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-image: url("/images/kzlogo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services-container > h1 {
+  font-size: 3.2em;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.contact {
+   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.contact-flex {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 320px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f54606;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="date"] {
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f54606;
+}
+
+.ourContacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 10px;
+  text-align: center;
+  color:#f54606;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.ourContacts p {
+  font-size: 18px;
+  font-weight: 800;
+}
+.ourContacts h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ourContacts p,
+.ourContacts h4 {
+  margin-bottom: 5px;
+}
+
+.ourContacts a {
+  color: #333;
+  text-decoration: none;
+}
+
+.ourContacts a:hover {
+  text-decoration: none;
+  color: #f54606;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.google-maps {
+  color: rgb(117, 119, 122);
+  margin-left: 15px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.google-maps:hover{
+  cursor: pointer;
+}
+
+.d-flex svg {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-container {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .services-container > h1 {
+    font-size: 3.2em;
+  }
+  .services-container > h1 {
+    font-size: 2em;
+  }
+  .contact{
+    margin-top: 10px;
+  }
+  .contact-flex {
+    flex-direction: column;
+
+}
+.contact-form{
+  width: 100%;
+}
+.ourContacts{
+  margin-bottom: 100px;
+}
+}

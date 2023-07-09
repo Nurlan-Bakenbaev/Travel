@@ -1,0 +1,41 @@
+.factContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 23px;
+  height: 65%;
+}
+
+.factCard {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  
+}
+
+.factTitle {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.factContent {
+  font-size: 1em;
+}
+@media (max-width: 768px) {
+  .factCard {
+    width: 100%;
+  }
+  h1 {
+    width: 100%;
+  }
+  .factContainer {
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

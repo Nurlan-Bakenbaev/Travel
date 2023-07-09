@@ -1,0 +1,46 @@
+.video-player {
+  position: relative;
+  width: 100%;
+}
+
+.video-player video {
+  width: 100%;
+}
+
+.video-player .controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(195, 192, 192, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.video-player .volume-control input {
+  width: 50px;
+}
+
+.video-player .fullscreen-button .controls {
+  background: transparent;
+  cursor: pointer;
+}
+
+.play-volume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.controls button{
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.controls img{
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.controls h2{
+  font-size: 12px;
+}

@@ -1,0 +1,151 @@
+.cards{
+  background-color: aliceblue;
+  text-align: center;
+  margin-top: 4rem;
+}
+.cards>h1{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.cards__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  width: 100%;
+}
+
+.cards__item__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.cards__item__img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.cards__item__text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  overflow: hidden;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 3s;
+}
+
+.cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  margin-left: 10px;
+  padding: 5px 12px;
+  max-width: calc(100% - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+}
+
+.cards__item__img {
+  min-width: 250px;
+  height: 190px;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__info {
+ border-radius:  30px;
+
+}
+
+.cards__item__text {
+  text-align: center;
+  color: #252e48;
+  font-size: 22px;
+  width: 100%;
+}
+
+.no-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+.cards__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 25px;
+  align-items: baseline;
+}
+.cards__item__pic-wrap{
+  display: flex;
+  align-items: center;
+  min-width: 50%;
+}
+.cards__items{
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 769px) {
+  .cards__items {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .cards__item__text {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  
+
+
+  .cards__item__pic-wrap {
+width: 100%;
+padding: 10px;
+  }
+
+
+  .cards__item__text {
+    font-size: 16px;
+    pad: 20px;
+    width: 80%;
+  }
+}
