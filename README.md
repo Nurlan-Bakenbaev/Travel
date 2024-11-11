@@ -1,2 +1,0 @@
-# travelKZ
-# lesson-1
